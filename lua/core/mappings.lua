@@ -266,7 +266,7 @@ M.telescope = {
   plugin = true,
 
   n = {
-    -- find 
+    -- find
     ["<leader>ff"] = { "<cmd> Telescope find_files <CR>", "Find files" },
     ["<leader>fa"] = { "<cmd> Telescope find_files follow=true no_ignore=true hidden=true <CR>", "Find all" },
     ["<leader>fw"] = { "<cmd> Telescope live_grep <CR>", "Live grep" },
@@ -337,7 +337,7 @@ M.nvterm = {
         require("nvterm.terminal").toggle "vertical"
       end,
       "Toggle vertical term",
-    }, 
+    },
   },
 }
 
