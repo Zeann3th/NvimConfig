@@ -157,5 +157,23 @@ local plugins = {
       }
     end,
   },
+  {
+    "folke/lazy.nvim",
+    config = function()
+      require("lazy").setup {
+        "DaikyXendo/nvim-material-icon",
+      }
+    end,
+  },
+  {
+    "antosha417/nvim-lsp-file-operations",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-tree/nvim-tree.lua",
+    },
+    config = function()
+      require("lsp-file-operations").setup()
+    end,
+  },
 }
 return plugins

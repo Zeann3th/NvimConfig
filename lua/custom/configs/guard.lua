@@ -8,8 +8,10 @@ ft("go"):fmt("lsp"):append "gofumpt"
 
 ft("python"):fmt "lsp"
 
-ft("typescript,javascript,typescriptreact,javascriptreact"):fmt "lsp"
+ft("typescript,javascript,typescriptreact,javascriptreact"):fmt("lsp"):append "prettier"
 
 ft("json"):fmt "lsp"
+
+ft("typst"):fmt "lsp"
 
 return ft
